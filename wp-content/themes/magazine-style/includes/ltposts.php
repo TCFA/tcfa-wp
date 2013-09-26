@@ -1,6 +1,6 @@
 
 
-<div id="latesthd"><h4>Latest</h4></div>
+<div id="latesthd"><h4><?php _e('Latest', 'magazine') ?></h4></div>
 <ul><div id="ltpost">
 <?php 
 /*

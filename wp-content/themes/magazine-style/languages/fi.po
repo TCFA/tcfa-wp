@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TCFA v1\n"
-"POT-Creation-Date: 2013-09-26 21:59+0200\n"
-"PO-Revision-Date: 2013-09-26 21:59+0200\n"
+"POT-Creation-Date: 2013-09-26 22:09+0200\n"
+"PO-Revision-Date: 2013-09-26 22:09+0200\n"
 "Last-Translator: \n"
 "Language-Team: TCFA <tcfa@tcfa.fi>\n"
 "Language: FI\n"
@@ -232,6 +232,10 @@ msgstr ""
 #: ../includes/adfun.php:52
 msgid "Go to Top"
 msgstr "Ylös"
+
+#: ../includes/ltposts.php:3
+msgid "Latest"
+msgstr "Viimeisimmät"
 
 #: ../includes/post.php:16 ../includes/post.php:32
 msgid "Continue reading &raquo;"
