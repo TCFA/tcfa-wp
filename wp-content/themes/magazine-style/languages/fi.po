@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TCFA v1\n"
-"POT-Creation-Date: 2013-08-31 17:02+0200\n"
-"PO-Revision-Date: 2013-08-31 17:06+0200\n"
+"POT-Creation-Date: 2013-09-26 21:59+0200\n"
+"PO-Revision-Date: 2013-09-26 21:59+0200\n"
 "Last-Translator: \n"
 "Language-Team: TCFA <tcfa@tcfa.fi>\n"
 "Language: FI\n"
@@ -59,7 +59,7 @@ msgstr "Käyttäjän %s artikkelit"
 
 #: ../functions.php:132
 msgid "Navigation"
-msgstr ""
+msgstr "Navigaatio"
 
 #: ../functions.php:191
 msgid "Sidebar Right"
@@ -67,24 +67,24 @@ msgstr ""
 
 #: ../functions.php:198
 msgid "Bottom Menu 1"
-msgstr ""
+msgstr "Alavalikko 1"
 
 #: ../functions.php:206
 msgid "Bottom Menu 2"
-msgstr ""
+msgstr "Alavalikko 2"
 
 #: ../functions.php:214
 msgid "Bottom Menu 3"
-msgstr ""
+msgstr "Alavalikko 3"
 
 #: ../functions.php:222
 msgid "Bottom Menu 4"
-msgstr ""
+msgstr "Alavalikko 4"
 
 #: ../functions.php:283
 #, php-format
 msgid "Page %s"
-msgstr ""
+msgstr "Sivu %s"
 
 #: ../image.php:11
 #, php-format
@@ -98,15 +98,15 @@ msgstr ""
 
 #: ../image.php:22
 msgid "Edit"
-msgstr ""
+msgstr "Muokkaa"
 
 #: ../image.php:70
 msgid "Pages:"
-msgstr ""
+msgstr "Sivut:"
 
 #: ../functions/options-framework.php:181
 msgid "Options"
-msgstr ""
+msgstr "Asetukset"
 
 #: ../functions/options-framework.php:183 ../includes/adfun.php:50
 msgid "http://www.wrock.org/magazine-style"
@@ -114,19 +114,19 @@ msgstr ""
 
 #: ../functions/options-medialibrary-uploader.php:108
 msgid "View File"
-msgstr ""
+msgstr "Katsele tiedostoa"
 
 #: ../functions/options-medialibrary-uploader.php:183
 msgid "Gallery"
-msgstr ""
+msgstr "Galleria"
 
 #: ../functions/options-medialibrary-uploader.php:183
 msgid "Previously Uploaded"
-msgstr ""
+msgstr "Aiemmin tuodut"
 
 #: ../functions/theme-options.php:57
 msgid "General Settings"
-msgstr ""
+msgstr "Yleiset asetukset"
 
 #: ../functions/theme-options.php:60
 msgid "Custom Favicon URL"
@@ -232,3 +232,7 @@ msgstr ""
 #: ../includes/adfun.php:52
 msgid "Go to Top"
 msgstr "Ylös"
+
+#: ../includes/post.php:16 ../includes/post.php:32
+msgid "Continue reading &raquo;"
+msgstr "Lue lisää &raquo;"

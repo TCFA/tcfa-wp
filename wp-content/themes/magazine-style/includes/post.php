@@ -13,7 +13,7 @@
 			</div>
 			<div class="postinfo"><?php get_template_part('/includes/postmeta'); ?>
 
-</div> <!-- end postinfo --><a href="<?php the_permalink(); ?>"><span class="readmore">Continue reading &raquo;</span></a>
+</div> <!-- end postinfo --><a href="<?php the_permalink(); ?>"><span class="readmore"><?php _e('Continue reading &raquo;', 'magazine') ?></span></a>
 	</div></div>
 
 
@@ -29,7 +29,7 @@
 		</div>
 		<div class="postinfo"><?php get_template_part('/includes/postmeta'); ?>
 
-</div> <!-- end postinfo --><a href="<?php the_permalink(); ?>"><span class="readmore">Continue reading &raquo;</span></a>
+</div> <!-- end postinfo --><a href="<?php the_permalink(); ?>"><span class="readmore"><?php _e('Continue reading &raquo;', 'magazine') ?></span></a>
 	</div></div>
 
 <?php endif; ?>
