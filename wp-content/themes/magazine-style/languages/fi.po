@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TCFA v1\n"
-"POT-Creation-Date: 2013-09-26 22:09+0200\n"
-"PO-Revision-Date: 2013-09-26 22:09+0200\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2013-09-27 21:45+0200\n"
+"PO-Revision-Date: 2013-09-27 21:46+0200\n"
+"Last-Translator: Joni Hämäläinen <snurppa@gmail.com>\n"
 "Language-Team: TCFA <tcfa@tcfa.fi>\n"
 "Language: FI\n"
 "MIME-Version: 1.0\n"
@@ -240,3 +240,15 @@ msgstr "Viimeisimmät"
 #: ../includes/post.php:16 ../includes/post.php:32
 msgid "Continue reading &raquo;"
 msgstr "Lue lisää &raquo;"
+
+#: ../includes/postmeta.php:7
+msgid "No Comment"
+msgstr "Ei kommentteja"
+
+#: ../includes/postmeta.php:7
+msgid "1 Comment"
+msgstr "1 kommentti"
+
+#: ../includes/postmeta.php:7
+msgid "% Comments"
+msgstr "% kommenttia"
