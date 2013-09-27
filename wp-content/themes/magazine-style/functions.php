@@ -243,12 +243,12 @@ function magazine_pagenavi() {
   $total = 1;
   $args['mid_size'] = 3;
   $args['end_size'] = 1;
-  $args['prev_text'] = '&#171; Prev';
-  $args['next_text'] = 'Next &raquo;';
+  $args['prev_text'] = __('&#171; Prev', 'magazine');
+  $args['next_text'] = __('Next &raquo;', 'magazine');
  
   if ($max > 1) echo '</pre>
 <div class="wp-pagenavi">';
- if ($total == 1 && $max > 1) $pages = '<span class="pages">Page ' . $current . ' of ' . $max . '</span>';
+ if ($total == 1 && $max > 1) $pages = '<span class="pages">'.__('Page ', 'magazine') . $current . __(' of ', 'magazine') . $max . '</span>';
  echo $pages . paginate_links($args);
  if ($max > 1) echo '</div>
 <pre>';

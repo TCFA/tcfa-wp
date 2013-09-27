@@ -22,8 +22,8 @@
 </span><div class="gap"></div><?php if (magazine_get_option('magazine_author' ) =='1' ) {load_template(get_template_directory() . '/includes/author.php'); } ?>
 
 		<div id="single-nav" class="clearfix">
-			<div id="single-nav-left"><?php previous_post_link('&laquo;<strong>%link</strong>'); ?></div>
-		<div id="single-nav-right"><?php next_post_link('<strong>%link</strong>&raquo;'); ?></div>
+			<div id="single-nav-left"><?php previous_post_link('&laquo; <strong class="navi">%link</strong>'); ?></div>
+		<div id="single-nav-right"><?php next_post_link('<strong class="navi">%link</strong> &raquo;'); ?></div>
         </div>
         <!-- END single-nav -->
 			<div class="comments">	<?php comments_template(); ?>	</div> <!-- end div .comments -->	</div> <!-- end div .post -->

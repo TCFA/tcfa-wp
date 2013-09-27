@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TCFA v1\n"
-"POT-Creation-Date: 2013-09-27 21:45+0200\n"
-"PO-Revision-Date: 2013-09-27 21:46+0200\n"
+"POT-Creation-Date: 2013-09-27 22:30+0200\n"
+"PO-Revision-Date: 2013-09-27 22:31+0200\n"
 "Last-Translator: Joni Hämäläinen <snurppa@gmail.com>\n"
 "Language-Team: TCFA <tcfa@tcfa.fi>\n"
 "Language: FI\n"
@@ -43,7 +43,7 @@ msgstr "Tämä artikkeli on salasanasuojattu. Anna salasana nähdäksesi."
 
 #: ../comments.php:12
 msgid "comments"
-msgstr "kommenttia"
+msgstr "kommentit"
 
 #: ../functions.php:86
 #, php-format
@@ -81,6 +81,23 @@ msgstr "Alavalikko 3"
 msgid "Bottom Menu 4"
 msgstr "Alavalikko 4"
 
+#: ../functions.php:246
+msgid "&#171; Prev"
+msgstr "&#171; Edellinen"
+
+#: ../functions.php:247
+msgid "Next &raquo;"
+msgstr "Seuraava &raquo;"
+
+#: ../functions.php:251
+#, fuzzy
+msgid "Page "
+msgstr "Sivu"
+
+#: ../functions.php:251
+msgid " of "
+msgstr "/"
+
 #: ../functions.php:283
 #, php-format
 msgid "Page %s"
@@ -103,6 +120,57 @@ msgstr "Muokkaa"
 #: ../image.php:70
 msgid "Pages:"
 msgstr "Sivut:"
+
+#: ../searchform.php:3
+msgid "Search"
+msgstr "Hae"
+
+#: ../functions/magazine-functions.php:9
+msgid "Home"
+msgstr "Aloitussivu"
+
+#: ../functions/magazine-functions.php:25
+msgid "Archive by category \""
+msgstr ""
+
+#: ../functions/magazine-functions.php:68
+msgid "Search results for \""
+msgstr ""
+
+#: ../functions/magazine-functions.php:70
+msgid "Posts tagged \""
+msgstr ""
+
+#: ../functions/magazine-functions.php:74
+msgid "Articles posted by "
+msgstr ""
+
+#: ../functions/magazine-functions.php:76
+msgid "Error 404"
+msgstr "Virhe 404 - Sivua ei löytynyt"
+
+#: ../functions/magazine-functions.php:82
+msgid "Page"
+msgstr "Sivu"
+
+#: ../functions/magazine-functions.php:154
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa moderointia."
+
+#: ../functions/magazine-functions.php:159
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s klo %2$s"
+
+#: ../functions/magazine-functions.php:162
+#: ../functions/magazine-functions.php:183
+#, fuzzy
+msgid "(Edit)"
+msgstr "Muokkaa"
+
+#: ../functions/magazine-functions.php:181
+msgid "Pingback:"
+msgstr ""
 
 #: ../functions/options-framework.php:181
 msgid "Options"

@@ -9,7 +9,7 @@ return;	}
 ?>	
 <!-- You can start editing here. -->
 <?php if ( have_comments() ) : ?>
-	<h3 id="Comments"><?php _e('comments', 'magazine'); ?>comments</h3>
+	<h3 id="Comments"><?php _e('comments', 'magazine'); ?></h3>
 	<div class="navigation">
 		<div class="alignleft">
 			<?php previous_comments_link() ?>
