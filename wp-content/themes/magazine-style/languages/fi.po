@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TCFA v1\n"
 "POT-Creation-Date: 2013-09-27 22:30+0200\n"
-"PO-Revision-Date: 2013-09-27 22:31+0200\n"
+"PO-Revision-Date: 2013-09-27 23:13+0200\n"
 "Last-Translator: Joni Hämäläinen <snurppa@gmail.com>\n"
 "Language-Team: TCFA <tcfa@tcfa.fi>\n"
 "Language: FI\n"
@@ -23,11 +23,11 @@ msgstr "Virhe 404 - Sivua ei löytynyt"
 #: ../404.php:12
 msgid ""
 "Sorry, but the page you are trying to reach is unavailable or does not exist."
-msgstr "Valitettavasti hakemasi sivu ei ole saatavilla tai se on poistettu"
+msgstr "Valitettavasti hakemasi sivu ei ole saatavilla tai se on poistettu."
 
 #: ../404.php:13
 msgid "You may interested with this"
-msgstr ""
+msgstr "Alla linkkejä sivuillemme"
 
 #: ../archive.php:15
 msgid "Archive for"
