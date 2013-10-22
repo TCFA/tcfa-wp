@@ -70,3 +70,9 @@ ol.commentlist li div.reply {
 #commentform #submit{
 	background: #920016;	
 }
+
+#sidebar h4.widgettitle a.rsswidget {
+	padding: 1% 4% 1% 4%;
+	border-bottom: none;
+
+}
