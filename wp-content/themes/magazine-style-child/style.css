@@ -1,0 +1,72 @@
+/*
+Theme Name: Magazine Style Child
+Theme URI:
+Description: Child theme for Magazine - modification for TCFA
+Version: 1.4.2
+Author: Snurppa
+Text Domain: Magazine
+Template: magazine-style
+*/
+@import url("../magazine-style/style.css");
+
+blockquote {
+	border-left: 5px solid #920016;
+}
+#navigation {
+background: #353535;
+}
+
+#navigation-inner {
+	border-bottom: 4px solid #920016;
+}
+#navigation .secondary ul li.current-menu-item, 
+#navigation .secondary >ul >li a:hover {
+	background:#920016;
+	opacity: 1; 
+}
+#navigation  ul li.dropme a { 
+	background: #920016;
+} 
+#navigation .current_page_item {
+	background: #920016;
+}
+.current-menu-item {
+	background: #920016;
+}
+.current-post-parent{
+	background: #920016;
+}
+#single-nav  a {
+	color: #920016;
+}
+#searchsubmit {
+	background: #920016;
+}
+
+#subtitle {
+	border-bottom: 1px solid #920016; 
+}
+#pagecont table th {
+	background: #920016;
+}
+#content table th {
+	background: #920016;
+}
+.readmore {
+	background: #920016;
+}
+#sidebar h4, #sidebar h4 a {
+	border-bottom: 5px solid #920016;
+}
+#pagenavi a {
+	background-color: #920016;
+}
+#pagenavi span {
+	background-color: #920016;
+}
+ol.commentlist li div.reply {
+	background: #920016;
+}
+#commentform #submit{
+	background: #920016;	
+}
