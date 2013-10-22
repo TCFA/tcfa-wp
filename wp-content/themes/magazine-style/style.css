@@ -1,10 +1,10 @@
 /*
 Theme Name: Magazine Style
 Theme URI: http://www.wrock.org/magazine-style
-Description: Magazine Style Theme is best WordPress style magazine theme for personal and bussiness With full features SEO Optmize theme easly adapts on your mobile and desktop or any other device. Theme with lots of customization and connect social media like facebook, google+, twitter, pinterest, rss, skype, vimeo, dribbble, flickr, linkedin, youtube and Adsense ready It supports all the awesome WordPress features completely free theme works also for blogging.
-Version: 1.2.3
+Description: Magazine Style Theme is best WordPress theme design for personal and business With full features and SEO Optimize.Magazine WordPress Theme easily adapts on your mobile and desktop or any other device. Theme with lots of customization and connect social media like Facebook, Google+, twitter, pinterest, rss, Skype, vimeo, dribbble, flickr, LinkedIn, YouTube and Adsense ready It supports all the awesome WordPress features completely free theme works also for blogging.
+Version: 1.4.2
 Author: wrock.org by Sandy
-Author URI: http://www.wrock.org
+Author URI: http://www.wrock.org/about
 Tags: black, blue, white, light, custom-menu, custom-header, custom-background, one-column, two-columns, right-sidebar, theme-options, threaded-comments, sticky-post
 Text Domain: Magazine
 License: GNU General Public License v3 or later
@@ -38,6 +38,26 @@ Magazine Style WordPress theme is licensed under the GPL.
 	display: block;
 }
 
+/*
+Monda-Regular: Copyright (c) 2012, vernon adams (vern@newtypography.co.uk), with Reserved Font Names 'Monda'
+Styled by: https://plus.google.com/107807505287232434305/about
+License: SIL Open Font License, 1.1
+*/
+
+@font-face {
+	font-family: 'Monda';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/monda-regular-webfont.eot');
+}
+
+@font-face {
+	font-family: 'Monda';
+	src: local('Monda Regular'), local('Monda-Regular'), url('fonts/monda-regular-webfont.eot') format('embedded-opentype'), url('fonts/monda-regular-webfont.woff') format('woff');
+	local('Monda Regular'), local('Monda-Regular'), url('fonts/monda-regular-webfont.svg#Monda') format('svg');
+	local('Monda Regular'), local('Monda-Regular'), url('fonts/monda-regular-webfont.ttf') format('truetype');
+	url('fonts/monda-regular.ttf') format('truetype');
+}
 /* ===================== general ===================== */
 
 body {
@@ -69,8 +89,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Monda', sans-serif;
 }
 h1 {
-	font-size: 32px;
-	line-height: 32px;
+	font-size: 28px;
+	line-height: 28px;
 }
 h2 {
 	font-size: 22px;
@@ -108,13 +128,16 @@ code {
 }
 blockquote {
 	display: block;
-	margin: 25px 0;
-	padding: 0 0 0 45px;
-	clear: both;
-	font-size: 14px;
-	font-style: italic;
-	background: url(images/quote.png) no-repeat;
-	font-family: Georgia, Times; }
+margin: 25px 0;
+padding: 0 0 0 25px;
+clear: both;
+font-size: 14px;
+font-style: italic;
+font-family: Georgia, Times;
+border-left: 5px solid #FD4326;
+background: #eef7f8;
+color: #000;
+}
 blockquote.pullquote, blockquote.pullquoteleft {
 	font-size: 2em;
 	line-height: 1em;
@@ -179,7 +202,6 @@ div.gap {
 	-khtml-opacity: 0.9;
 	opacity: 0.9;
 }
-
 
 /*==========Author Information==========*/
 #author-bio {
@@ -324,52 +346,58 @@ img, img a {
 	margin-top: 3%;
 }
 
-/* #categroy menu */
+/************Top Navigation Menu************/
 
-	#navigation {
-background: #353535;
-margin: 0;
-font-size: 12px;
-min-height: 35px;
- position: relative;
-  }
-  
-
-
- #navigation .secondary{
-  background: #333; 
- border-top-right-radius: 2px;
- margin-bottom: 5px;
-border-top-left-radius: 2px;
- 
-
+#navigation {
+	margin: 0;
+	font-size: 12px;
+	min-height: 35px;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	background: #333;
+	z-index: 500;
 }
-	#navigation  ul {
-margin: 0 auto;
-padding: 0;
-list-style: none;
-line-height: 1;
-border-bottom: 0;
-text-align: center;
- 
+#navigation-inner {
+	margin: 0 auto;
+	width: 90%;
+	position: relative;
+	background: #333;
+	border-bottom: 4px solid #FD4326;
+}
+#navigation .secondary{
+	background: #333;
+	border-top-right-radius: 2px;
+	margin-bottom: 5px;
+	border-top-left-radius: 2px;
+}
+#navigation  ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	line-height: 1;
+	border-bottom: 0;
+	text-align: center;
 }
 #navigation  ul a {
-position: relative;
-display: block;
- padding: 0 18px;
-height: 35px;
-line-height: 48px;
-color: #fff;
-text-transform:uppercase;
--webkit-transition: all 0.2s ease-in-out;
--moz-transition: all 0.2s ease-in-out;
--o-transition: all 0.2s ease-in-out;
-transition: all 0.2s ease-in-out;
+	position: relative;
+	display: block;
+	padding: 0 18px;
+	height: 35px;
+	line-height: 48px;
+	color: #fff;
+	text-transform:uppercase;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
-#navigation .secondary ul a{height: 48px;
-color: white;
-line-height: 48px;
-font-size: 110%;}
+#navigation .secondary ul a{
+	height: 48px;
+	color: white;
+	line-height: 48px;
+	font-size: 110%;
+}
 	 
 #navigation  ul li{
 float: left;
@@ -381,19 +409,16 @@ width: auto;
 -o-transition: all .3s;
 -webkit-transition: all .3s;
 }
- 
-	#navigation  > .sub-menu{margin-left:0;}
-	#navigation  ul li:first-child  
-	#maganav ul  a{border-right:none;}
-  	#navigation  ul li.current-menu-item  a{color: #fff;}
- 	ul.catnav li a{padding:5px 10px;}	
-  	#navigation  ul li.current-menu-item  ,#navigation  ul li a:hover {  }
-	
-	#navigation .secondary ul li.current-menu-item, #navigation .secondary >ul >li a:hover {background:#920016; }
-	
-	#navigation  ul li.dropme a{background: #920016;} 
-	#navigation  ul ul {position: absolute;left: -999em;width: 212px;z-index:99999;border:0;margin-left:-1px;background: none;border-bottom: none;}
-	#navigation  ul ul a {
+#navigation  > .sub-menu{margin-left:0;}
+#navigation  ul li:first-child  
+#maganav ul  a{border-right:none;}
+#navigation  ul li.current-menu-item  a{color: #fff;}
+ul.catnav li a{padding:5px 10px;}	
+#navigation  ul li.current-menu-item  ,#navigation  ul li a:hover {  }
+#navigation .secondary ul li.current-menu-item, #navigation .secondary >ul >li a:hover {background:#FD4326;opacity: 1; }
+#navigation  ul li.dropme a{background: #FD4326;} 
+#navigation  ul ul {position: absolute;left: -999em;width: 212px;z-index:99999;border:0;margin-left:-1px;background: none;border-bottom: none;}
+#navigation  ul ul a {
 width: 198px;
 background-color: #212326;
 height: 15px;
@@ -403,12 +428,12 @@ overflow: hidden;
 text-align: left;
 border-right: none;} 
 #navigation .secondary ul ul a{padding: 0px 0px 2px 15px;}
-	#navigation  ul ul a:hover {opacity: 1;}
-	#navigation  ul ul ul {border-top:0;margin: -50px 0 0 212px;}
-	#navigation  ul li li  { margin:0;border:0;}
-	#navigation  ul li:hover { opacity: 1;position:static;}
-	#navigation  ul li:hover ul ul, #navigation  ul li:hover ul ul ul, #navigation  ul li:hover ul ul ul ul { left:-999em; }
-	#navigation  ul li:hover ul, #navigation  ul li li:hover ul,#navigation  ul li li li:hover ul,#navigation  ul li li li li:hover ul { left:auto; }
+#navigation  ul ul a:hover {opacity: 1;}
+#navigation  ul ul ul {border-top:0;margin: -50px 0 0 212px;}
+#navigation  ul li li  { margin:0;border:0;}
+#navigation  ul li:hover { opacity: 1;position:static;}
+#navigation  ul li:hover ul ul, #navigation  ul li:hover ul ul ul, #navigation  ul li:hover ul ul ul ul { left:-999em; }
+#navigation  ul li:hover ul, #navigation  ul li li:hover ul,#navigation  ul li li li:hover ul,#navigation  ul li li li li:hover ul { left:auto; }
 
 
 /* ===================== layout ===================== */
@@ -423,16 +448,16 @@ border-right: none;}
 	max-width: 75%;
 }
 #navigation .current_page_item {
-	background: #920016;
+	background: #FD4326;
 }
 .current-menu-item {
-	background: #359BED;
+	background: #FD4326;
 }
 .current-post-parent{
-	background: #359BED;
+	background: #FD4326;
 }
 #header {
-	height: 145px;
+	height: 120px;
 	background: transparent;
 	position: relative;
 	z-index: 100;
@@ -445,7 +470,6 @@ border-right: none;}
 	margin: auto;
 	width: 100%;
 	position: relative;
-	min-width: 770px;
 }
 #header #logo {
 	float: left;
@@ -453,12 +477,12 @@ border-right: none;}
 	margin: 0;
 	margin-top: 17px;
 	max-width: 470px;
-	max-height: 100px;
+	max-height: 90px;
 }
 #header #logo img {
 	max-width: 470px;
 	margin-left: 0;
-	max-height: 100px
+	max-height: 90px
 }
 #header #banner-top {
 	height: 75px; 
@@ -478,7 +502,7 @@ border-right: none;}
 border-top: 1px solid;
 }
 #single-nav  a {
-color:#920016;
+color:#FD4326;
 }
 #single-nav  :hover {
 color:#333;
@@ -493,40 +517,6 @@ color:#333;
 	padding: 5px;
 	font-weight: bold;
 	float:right;
-	
-}
-
-#navigation {
-	margin: 0 auto;
-	width: 100%;
-	background: #333;
-	
-	z-index: 500;
-	
-}
-#navigation-inner {
-	margin: 0 auto;
-	width: 90%;
-	position: relative;
-	background: #333;
-	min-width: 790px;
-	border-bottom: 4px solid #920016;
-}
-#featured-area {
-	padding: 0;
-	position: relative;
-	z-index: 1;
-}
-#featured-area-inner {
-	position: relative;
-	padding: 20px;
-	width: 590px;
-	height: 412px;
-	float: left;
-	margin-bottom: 10px;
-}
-#featured-area-inner a:hover {
-	text-decoration: none;
 }
 #page {
 	margin-top: 20px;
@@ -558,14 +548,15 @@ margin: 1%;
 #content {
 	width: 65%;
 	float: left;
-	margin-right: 3%;
+	margin-right: 2.5%;
 	min-width: 30%;
 	background: #FFF;
 	padding-bottom: 1%;
+	box-shadow: 0 1px 3px 0 #B5B5B5;
+	-moz-box-shadow: 0 1px 3px 0 #b5b5b5;
+	-webkit-box-shadow: 0 1px 3px 0 #B5B5B5;
+	border: 1px solid #DDD;
 }
-#rdfa{
-	background:#f5f5f5;
-	}
 /* ===================== post-slider ===================== */
 .post-slider {
 	color: #ddd;
@@ -607,12 +598,12 @@ margin: 1%;
 }
 #searchsubmit {
 	cursor: pointer;
-	background: url(images/sr.png) no-repeat left top;
+	background: #FD4326;
 	height: 37px;
 	width: 48px;
 	border: none;
-	text-indent: -999%;
-	line-height: 1px;
+	font-weight: bold;
+	color: #FFF;
 }
 form#searchform input#s {
 	padding: 0px 0px 0px 9px;
@@ -632,7 +623,7 @@ form#searchform input#s {
 	margin: 3px 0px 10px 0px;
 	padding: 5px;
 	font-style: italic;
-	border-bottom: 1px solid #920016; 
+	border-bottom: 1px solid #FD4326; 
 }
 /* ===================== content  ===================== */
 .post {
@@ -651,14 +642,7 @@ form#searchform input#s {
 	max-width: 150px;
 	max-height: 150px;
 }
-.post .post-content {
-	padding: 0;
 
-}
-.post .post-content-no-thumb {
-	padding: 0;
-	
-}
 .post h1 {
 	color: #000;
 	margin-bottom: 10px;
@@ -681,7 +665,7 @@ padding-left: 20px;
 }
 #pagecont table th {
 padding: 9px 15px 9px 25px;
-background: #920016;
+background: #FD4326;
 font-size: 20px;
 color: #FFF;
 text-shadow: none;
@@ -709,8 +693,7 @@ padding-left: 20px;
 }
 #content table th {
 padding: 2px;
-background: #920016;
-font-size: 20px;
+background: #FD4326;
 color: #FFF;
 text-shadow: none;
 text-align: left;
@@ -772,12 +755,15 @@ tbody{
 .postinfo {
 }
 .postmeta_box {
-	height: auto;
+height: auto;
 font-size: 11px;
-clear: both;
+margin: 11px 0;
 float: left;
+width: 99%;
+padding-left: 5px;
 display: inline;
-padding-right: 10px;
+border-top: 1px dotted;
+border-bottom: 1px dotted;
 }
 .postmeta li {
 	display: inline;
@@ -795,24 +781,41 @@ padding-right: 10px;
 	text-decoration: underline;
 }
 .comp {
-	float: left;
-background: url(images/i_comment.png) no-repeat;
-background-position: 0 5px;
-padding-left: 18px;
+padding-left: 17px;
+background: url(images/metaimg.png) no-repeat;
+background-position: 0px -49px;
 }
-.tags {
-	float:right;
-    background: url(images/tag.png) no-repeat;
-	background-position:0 3px;
-	padding-left:18px;
+.post-edit-link{
+padding-left: 16px;
+background: url(images/metaimg.png) no-repeat;
+background-position: 0px -142px;
 }
 
+.tags {
+padding-left: 14px;
+padding-right: 5px;
+background: url(images/metaimg.png) no-repeat;
+background-position: 0px -121px;
+}
 .auth {
-	float: left;
-background: url(images/auth.png) no-repeat;
-background-position: 0 5px;
+float: left;
+background: url(images/metaimg.png) no-repeat;
 padding-left: 18px;
 margin-right: 5px;
+background-position: 0px -73px;
+}
+.postcateg {
+float: left;
+padding-left: 18px;
+margin-right: 5px;
+background: url(images/metaimg.png) no-repeat;
+background-position: 0px -97px;
+}
+.author{
+padding-left: 18px;
+margin-right: 5px;
+background: url(images/metaimg.png) no-repeat;
+background-position: 0px -26px;
 }
 .postmeta_bottom li {
 	display: inline;
@@ -835,7 +838,7 @@ margin-right: 5px;
 	margin-bottom: 40px;
 }
 .readmore {
-	background: #920016;
+	background: #FD4326;
     cursor: pointer;
 	padding: 8px;
 	float: right;
@@ -857,7 +860,6 @@ margin-right: 5px;
 Name: Social
 Author: Paul Crowe
 URL: http://www.spiceupyourblog.com/2013/07/mini-social-icons-with-css-and-image.html
-License: Open Source
 */
 ul.spicesocialwidget {float:right; margin-top: 4%;}
 ul.spicesocialwidget li {float:left;list-style: none outside none;border:none;}
@@ -955,7 +957,7 @@ max-width: 95%;
 	background: #333;
 	font-weight: bold;
 	font-size: 17px;
-	border-bottom: 5px solid #920016;
+	border-bottom: 5px solid #FD4326;
 	padding: 4%;
 }
 }
@@ -984,7 +986,6 @@ margin-bottom: -10px;
 	-moz-box-shadow: 0 1px 3px 0 #b5b5b5;
 	-webkit-box-shadow: 0 1px 3px 0 #B5B5B5;
 	border: 1px solid #DDD;
-	margin-left: -17PX;
 	margin-bottom: 10px;
 	background: #FFF;
 }
@@ -1135,9 +1136,6 @@ html ul.tabs li.active, html ul.tabs li.active a:hover  {
 	background: #f5f5f5;
 }
 /* ===================== bottom-menu ===================== */
-#ftad {
-	padding:1px;
- }
  #footerads{
 	padding:30px;
 }
@@ -1174,16 +1172,14 @@ padding-top: 15px;
 	border-bottom: none;
 }
 #bottom-menu h4 {
-	margin: 0 0 10px;
-	line-height: 22px;
-	padding: 10px 11px;
-	font-weight: bold;
-	background-image: url("images/arrow-circle.png");
-	background-position: 96% 13px;
-	background-repeat: no-repeat;
-	color: #000;
-	margin-bottom: 15px;
-	border: 1px solid #920016;
+margin: 0 0 10px;
+line-height: 22px;
+padding: 10px 11px;
+font-weight: bold;
+color: #FFF;
+margin-bottom: 15px;
+background: #333;
+border-top-right-radius: 30px;
 }
 #bottom-menu-1 {
 	width: 22%;
@@ -1263,7 +1259,7 @@ padding-top: 15px;
     text-decoration: none;
 	color: #fff;
     line-height:24px;
-	background-color: #920016;
+	background-color: #FD4326;
 }
 #pagenavi span {
 	padding: 5px 14px 5px 14px;
@@ -1271,7 +1267,7 @@ padding-top: 15px;
 	text-decoration: none;
 	color: #ffffff;
 	line-height:24px;
-	background-color: #920016;
+	background-color: #FD4326;
 }
 #pagenavi a:hover {
 	color:#fff;
@@ -1287,15 +1283,16 @@ padding-top: 15px;
 }
 /* ===================== Scroll to top ===================== */
 .backtop {
-	background: url("images/btop.png") no-repeat scroll right top transparent;
-	border: 0 solid #656565;
-	float: right;
-	font-size: 12px;
-	color:#ff9933;
-	margin: 0 0 4px 0;
-	padding: 8px 15px;
-	text-align: center;
-	width: 100px;
+background: #F5F5F5;
+color: #333;
+width: 30px;
+text-align: center;
+height: 26px;
+padding-top: 4px;
+display: inline-block;
+zoom: 1;
+border-radius: 10em;
+box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 .backtop:hover{
 	text-decoration:none;
@@ -1379,7 +1376,7 @@ ol.commentlist li div.reply {
 	cursor: pointer;
 	padding: .25em .5em;
 	margin: -3px 1.6em 7px;
-	background:#920016;
+	background:#FD4326;
 }
 ol.commentlist li div.reply a {
 	font-weight:bold;
@@ -1433,22 +1430,22 @@ ol.commentlist li ol {
 #commentform p {
 }
 #commentform #email {
-	width: 400px;
+	width: 50%;
 	margin-left: 36px;
 }
 #commentform #author {
-	width: 400px;
+	width: 50%;
 	margin-left: 36px;
 }
 #commentform #url {
-	width: 400px;
+	width: 50%;
 	margin-left: 34px;
 }
 #commentform small {
 	line-height: 26px;
 }
 #commentform #submit{
-	background: #920016;
+	background: #FD4326;
 	cursor: pointer;
 	font-weight: bold;
 	font-size: 14px;
@@ -1538,25 +1535,26 @@ opacity: 1;
 }
 pre {
 	white-space: pre-wrap;
-line-height: 1em;
-margin: 15px -2px;
-overflow: auto;
-color: #333;
-background: #F4F4F4;
-padding: 6px;
--moz-tab-size: 2;
--o-tab-size: 2;
-tab-size: 3;
--ms-word-break: normal;
-word-break: normal;
--webkit-hyphens: none;
--moz-hyphens: none;
--ms-hyphens: none;
-hyphens: none;
-position: relative;
-border: 1px solid;
+	line-height: 1em;
+	margin: 15px -2px;
+	overflow: auto;
+	color: #000;
+	padding: 6px;
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 3;
+	-ms-word-break: normal;
+	word-break: normal;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	position: relative;
+	border-top: 1px solid #000 !important;
+	line-height: 20px;
+	border-bottom: 1px solid #000 !important;
 }
-#wrock-page-link{
+.page-links{
 	clear: both;
 	display: block;
 	font-size: 16px;
@@ -1565,3 +1563,115 @@ border: 1px solid;
 	float: left;
 }
 
+/*===================== responsive ===================*/
+@media only screen and (min-width: 480px) {
+/* == INTERMEDIATE: Menu == */
+
+#navigation-wrapper, .nav ul a, .nav ul {
+
+}
+.nav ul {
+
+}
+.nav a, .next-post a{
+
+}
+.nav li:first-child a{
+	margin-left:0;
+}
+.nav li:last-child  a{
+	margin-right:0;
+}
+/* == INTERMEDIATE: IE Fixes == */
+.nav ul li{
+	display:inline;
+}
+
+}
+
+.nav{
+	width:100%;
+
+}
+.nav select {
+	display: none;
+
+}
+@media (max-width: 960px) {
+.nav ul     {
+	display: none;
+}
+
+.nav select {
+	display: inline-block;
+	width: 100%;
+	font-size: 22px;
+}
+#author-bio {font-size: 10px;
+}
+a {font-size: 11px;}
+#pagecont {
+	width:100% !important;
+	font-size: 22px;
+	line-height: 2;}
+#content {
+	width:100% !important;
+	font-size: 22px;
+	line-height: 2;}
+.postmeta_box {
+	font-size: 18px !important;
+	line-height: 2;
+}
+#bottom-menu{
+	display: none;
+}
+#footer-right {
+	float: none !important;
+	width: auto !important;
+}
+#footer-left{
+	float: none !important;
+	width: auto !important;
+}
+.backtop {
+	display: none;
+}
+.entry {
+font-size:10px;}
+.readmore{
+padding:0;
+font-size: 8px;}
+h1 {
+font-size:15px;
+line-height: 2;
+}
+h2 {
+font-size:14px;
+}
+h3 {
+font-size:13px;
+}
+.postmeta_box {
+	display: none;
+}
+.spicesocialwidget{
+	display: none;
+}
+#header #logo img{
+width: 100%;
+}
+.wp-pagenavi{font-size: 5px; padding:5px;margin: 0px;}
+#pagenavi a{font-size: 5px;padding: 5px; margin: 0px;}
+.pages{display: none;}
+.dots{display: none;}
+body{
+font-size: 10px !important;
+line-height: 2 !important;
+}
+#commentform p {
+font-size:10px;
+}
+#sidebar{width: 100% !important;
+font-size: 14px;
+line-height: 2;}
+}

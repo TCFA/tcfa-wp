@@ -29,10 +29,28 @@ Custom Css:
 
 
 == Change log ==
+= 1.4.2 =
+*Responsive website design
+*Main Menu fixed when no menu created
+*<pre> and <blockquote> redisigned
+
+= 1.3.2 =
+*Header menu not working bux fixed
+*IE 6 DD_belatedPNG_0.0.8a-min.js removed no need of that.
+*Footer ads will now show in every page and post
+
+
+= 1.3.1 =
+*Bug Fixed
+*Added Image sprite in post meta
+*Theme Author URI changed
+
 = 1.2.3 =
 *Bug Fixed
 *Social share fixed in sidebar
 *Longs table overflow fixed
+*Resize header to increase post view area
+*Redesign footer widget
 
 = 1.2.2 =
 *Bug Fixed

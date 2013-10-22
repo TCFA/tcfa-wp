@@ -58,7 +58,7 @@ function magazine_optionsframework_init() {
     require_once dirname(__FILE__) . '/options-medialibrary-uploader.php';
     // Loads the options array from the theme
     if ($optionsfile = locate_template(array('theme-options.php'))) {
-        require_once($optionsfile);
+        require_once dirname(__FILE__) . '/theme-options.php';
     } else if (file_exists(dirname(__FILE__) . '/theme-options.php')) {
         require_once dirname(__FILE__) . '/theme-options.php';
     }
@@ -170,7 +170,7 @@ function magazine_of_admin_head() {
         $return = optionsframework_fields();
         settings_errors();
         ?>
-		  
+		   <?php get_template_part('/includes/wrock'); ?>
         <div class="wrap"> 
 		
             <?php $options = get_option('of_template');

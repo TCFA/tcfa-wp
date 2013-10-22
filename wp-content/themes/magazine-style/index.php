@@ -7,7 +7,6 @@
 				<div id="content">
 					<?php if(have_posts()) : ?>
 					<?php while(have_posts())  : the_post(); ?>
-						<div id="post-<?php the_ID(); ?>" class="post clearfix">					
 							<?php get_template_part('/includes/post'); ?>
 					<?php endwhile; ?>
 					<?php else : ?>
@@ -16,7 +15,6 @@
 									<h2><?php _e('404 Error&#58; Not Found', 'magazine' ); ?></h2>
 									<span class="posttime"></span>
 								</div>
-							</div>
 						</div>
 					<?php endif; ?>
 					<?php load_template (get_template_directory() . '/includes/pagenav.php'); ?>	

@@ -40,8 +40,7 @@
 	<div id="footer-inner" class="clearfix">
 		
 		<div id="footer-left">
-<p><?php _e('Copyright &#169;', 'magazine'); ?>  <?php echo date('Y');?> <a href="<?php echo esc_url(home_url());?>/" title="<?php bloginfo('name');?>" ><?php bloginfo('name');?></a><br />
-	<?php echo stripslashes(get_option('km_footer_text')); ?>	<?php _e('Powered by', 'magazine'); ?> <a href="http://wordpress.org/"><strong><?php _e('WordPress', 'magazine'); ?></strong></a>
+<p><?php _e('Copyright &#169;', 'magazine'); ?>  <?php echo date('Y');?> <a href="<?php echo esc_url(home_url());?>/" title="<?php bloginfo('name');?>" ><?php bloginfo('name');?></a><br /><?php _e('Powered by', 'magazine'); ?> <a href="http://wordpress.org/"><strong><?php _e('WordPress', 'magazine'); ?></strong></a>
 </p>
 </div> <!-- end div #footer-left -->
 
@@ -49,8 +48,8 @@
 <p>
 <a href="<?php echo esc_url( __( 'http://www.wrock.org/magazine-style', 'magazine' ) ); ?>" title="<?php esc_attr_e( 'Wrock.Org', 'magazine' ); ?>"><?php printf( __( 'Magazine Style Theme %s', 'magazine' ),''); ?></a>
 </p>
-<p><a class="backtop" href="#"><?php _e('Go to Top', 'magazine'); ?></a></p>
-<br />
+<p><a class="backtop" href="#top"><?php _e('&#8593;', 'magazine'); ?></a></p>
+
 		</div> <!-- end div #footer-right -->
 
 

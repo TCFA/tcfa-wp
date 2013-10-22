@@ -6,7 +6,7 @@ ob_start();
 
 function magazine_breadcrumbs() {
     $delimiter = '&raquo;';
-    $home = __('Home', 'magazine'); // text for the 'Home' link
+    $home = 'Home'; // text for the 'Home' link
     $before = '<span class="current">'; // tag before the current crumb
     $after = '</span>'; // tag after the current crumb
     echo '<div id="crumbs">';
@@ -22,7 +22,7 @@ function magazine_breadcrumbs() {
         $parentCat = get_category($thisCat->parent);
         if ($thisCat->parent != 0)
             echo(get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' '));
-        echo $before . __('Archive by category "', 'magazine') . single_cat_title('', false) . '"' . $after;
+        echo $before . 'Archive by category "' . single_cat_title('', false) . '"' . $after;
     } elseif (is_day()) {
         echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
         echo '<a href="' . get_month_link(get_the_time('Y'), get_the_time('m')) . '">' . get_the_time('F') . '</a> ' . $delimiter . ' ';
@@ -65,21 +65,21 @@ function magazine_breadcrumbs() {
             echo $crumb . ' ' . $delimiter . ' ';
         echo $before . get_the_title() . $after;
     } elseif (is_search()) {
-        echo $before . __('Search results for "','magazine') . get_search_query() . '"' . $after;
+        echo $before . 'Search results for "' . get_search_query() . '"' . $after;
     } elseif (is_tag()) {
-        echo $before . __('Posts tagged "','magazine') . single_tag_title('', false) . '"' . $after;
+        echo $before . 'Posts tagged "' . single_tag_title('', false) . '"' . $after;
     } elseif (is_author()) {
         global $author;
         $userdata = get_userdata($author);
-        echo $before . __('Articles posted by ','magazine') . $userdata->display_name . $after;
+        echo $before . 'Articles posted by ' . $userdata->display_name . $after;
     } elseif (is_404()) {
-        echo $before . __('Error 404', 'magazine') . $after;
+        echo $before . 'Error 404' . $after;
     }
 
     if (get_query_var('paged')) {
         if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author())
             echo ' (';
-        echo __('Page','magazine') . ' ' . get_query_var('paged');
+        echo 'Page' . ' ' . get_query_var('paged');
         if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author())
             echo ')';
     }
@@ -99,7 +99,7 @@ function magazine_breadcrumbs() {
         }
 // Output styles
         if ($output <> '') {
-            $output = "<!-- Custom Styling -->\n<style type=\"text/css\">\n" . $output . "</style>\n";
+            $output = "<!-- Custom Styling -->\n<style type=\"text/css\">/*<![CDATA[*/\n" . $output . "/*]]>*/</style>\n";
             echo $output;
         }
     }
@@ -151,15 +151,15 @@ if ('magazine_comment') :
                         <div class="comment-author vcard"> <?php echo get_avatar($comment, 40); ?> <?php printf('%s <span class="says">says:</span>' . sprintf('<cite class="fn">%s</cite>', get_comment_author_link())); ?> </div>
                         <!-- .comment-author .vcard -->
                         <?php if ($comment->comment_approved == '0') : ?>
-                            <em> <?php _e('Your comment is awaiting moderation.', 'magazine'); ?> </em> <br />
+                            <em> <?php echo ('Your comment is awaiting moderation.'); ?> </em> <br />
                         <?php endif; ?>
                         <div class="comment-meta commentmetadata"><a href="<?php echo esc_url(get_comment_link($comment->comment_ID)); ?>">
                                 <?php
                                 /* translators: 1: date, 2: time */
-                                printf(__('%1$s at %2$s', 'magazine') . get_comment_date(), get_comment_time());
+                                printf('%1$s at %2$s' . get_comment_date(), get_comment_time());
                                 ?>
                             </a>
-                            <?php edit_comment_link(__('(Edit)', 'magazine'), ' ');
+                            <?php edit_comment_link('(Edit)', ' ');
                             ?>
                         </div>
                         <!-- .comment-meta .commentmetadata -->
@@ -178,9 +178,9 @@ if ('magazine_comment') :
                 case 'trackback' :
                     ?>
                 <li class="post pingback">
-                    <p> <?php echo __('Pingback:', 'magazine'); ?>
+                    <p> <?php echo ('Pingback:'); ?>
                         <?php comment_author_link(); ?>
-                        <?php edit_comment_link(__('(Edit)'), ' '); ?>
+                        <?php edit_comment_link('(Edit)', ' '); ?>
                     </p>
                     <?php
                     break;

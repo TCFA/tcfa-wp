@@ -25,23 +25,14 @@ include_once get_template_directory() . '/functions/magazine-functions.php';
     require_once (OPTIONS_FRAMEWORK_URL . 'options-framework.php');
 
 function magazine_scripts() {
-	/*
-	 * Loads our main stylesheet.
-	 */
+	wp_enqueue_script('topnavi', get_template_directory_uri().'/js/topnavi.js', array('jquery'), '1.0', false );
 	wp_enqueue_style( 'magazine-style', get_stylesheet_uri() );
-	// Add Monda font, used in the main stylesheet.
-	wp_enqueue_style( 'monda', get_template_directory_uri() . '/fonts/monda.css', array(), '1.1' );
-	/**
-	* Enqueues the javascript for comment replys 
-	* 
-	**/
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 	}
 add_action( 'wp_enqueue_scripts', 'magazine_scripts' );
-/**
- * Sets up the content width value based on the theme's design.
- */
+
 if ( ! isset( $content_width ) )
 	$content_width = 770;
 
@@ -58,7 +49,7 @@ if ( ! isset( $content_width ) )
 $class = 'class="current_page_item home-icon"';
 else
 $class = 'class="home-icon"';
-			echo '<li ' . $class . ' ><a href="'.esc_url(home_url()) . '/"><img src="'. get_template_directory_uri() . '/images/home.png" /></a></li>';
+			echo '<li ' . $class . ' ><a href="'.esc_url(home_url()) . '/"><img src="'. get_template_directory_uri() . '/images/home.jpg" width="26" height="24" alt="Home"/></a></li>';
 		}
 		wp_list_pages('title_li=');
 		echo '</ul>';
@@ -74,7 +65,7 @@ $homeMenuItem =
 '<li ' . $class . '>' .
 $args->before .
 '<a href="' .esc_url(home_url( '/' )) . '" title="Home">' .
-$args->link_before . '<img src="'. get_template_directory_uri() . '/images/home.png" height="20" width="26" />' . $args->link_after .
+$args->link_before . '<img src="'. get_template_directory_uri() . '/images/home.jpg" width="26" height="24" alt="Home"/>' . $args->link_after .
 '</a>' .
 $args->after .
 '</li>';
@@ -83,15 +74,15 @@ return $items;
 }
 
 function magazine_post_meta_data() {
-	printf( __( '<span class="%1$s">Posted on </span>%2$s<span class="%3$s"> by </span>%4$s', 'magazine' ),
+	printf( __( '%2$s  %4$s', 'magazine' ),
 	'meta-prep meta-prep-author posted', 
-	sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="timestamp updated">%3$s</span></a>',
+	sprintf( '<span itemprop="datePublished" class="timestamp updated">%3$s</span>',
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		esc_html( get_the_date() )
 	),
 	'byline',
-	sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
+	sprintf( '<span class="author vcard" itemprop="author" itemtype="http://schema.org/Person"><span class="fn">%3$s</span></span>',
 		get_author_posts_url( get_the_author_meta( 'ID' ) ),
 		sprintf( esc_attr__( 'View all posts by %s', 'magazine' ), get_the_author() ),
 		esc_attr( get_the_author() )
@@ -177,7 +168,7 @@ function magazine_theme_setup() {
     $output = get_the_excerpt();
     $output = apply_filters('wptexturize', $output);
     $output = apply_filters('convert_chars', $output);
-    $output = '<p>'.$output.'</p>';
+    $output = ''.$output.'';
     echo $output;
     }
 
@@ -243,15 +234,13 @@ function magazine_pagenavi() {
   $total = 1;
   $args['mid_size'] = 3;
   $args['end_size'] = 1;
-  $args['prev_text'] = __('&#171; Prev', 'magazine');
-  $args['next_text'] = __('Next &raquo;', 'magazine');
+  $args['prev_text'] = '&#171; Prev';
+  $args['next_text'] = 'Next &raquo;';
  
-  if ($max > 1) echo '</pre>
-<div class="wp-pagenavi">';
- if ($total == 1 && $max > 1) $pages = '<span class="pages">'.__('Page ', 'magazine') . $current . __(' of ', 'magazine') . $max . '</span>';
+  if ($max > 1) echo '<div class="wp-pagenavi">';
+ if ($total == 1 && $max > 1) $pages = '<span class="pages">Page ' . $current . ' of ' . $max . '</span>';
  echo $pages . paginate_links($args);
- if ($max > 1) echo '</div>
-<pre>';
+ if ($max > 1) echo '</div>';
 }
 
 /**

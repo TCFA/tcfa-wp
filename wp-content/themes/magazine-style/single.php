@@ -4,26 +4,20 @@
 			<?php while(have_posts())  : the_post(); ?>
 			<div id="post-<?php the_ID(); ?>" class="post clearfix">
 			<h1><?php the_title(); ?></h1>
-			<div class="entry" class="clearfix">
-			<div id="ftad"><?php if ( magazine_get_option('magazine_ad2') <> "" ) { echo stripslashes(magazine_get_option('magazine_ad2')); } ?></div>	
+			<div class="entry clearfix">
+			<?php if ( magazine_get_option('magazine_ad2') <> "" ) { echo stripslashes(magazine_get_option('magazine_ad2')); } ?>
 			<?php the_content(); ?> 
 				
-								<div id="wrock-page-link"><?php wp_link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?></div>
-								<!-- <?php trackback_rdf(); ?> -->
+								<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'magazine' ), 'after' => '</div>' ) ); ?>
 							</div> <!-- end div .entry -->
 <span class="postmeta_box">
-	<div class="post_meta clearfix">
-		<ul class="auth"> <?php magazine_post_meta_data(); ?>, in <?php the_category(', '); ?>
-		</ul>
-		<ul class="tags">			
-			<?php if("the_tags") the_tags('Tags: ', ', ', ' - '); ?><?php edit_post_link('Edit', ' &#124; ', ''); ?>
-		</ul>
-	</div> <!-- end post_meta -->
-</span><div class="gap"></div><?php if (magazine_get_option('magazine_author' ) =='1' ) {load_template(get_template_directory() . '/includes/author.php'); } ?>
+		<?php get_template_part('/includes/postmeta'); ?><?php  if (get_the_tags()) :?> <span class="tags"><?php if("the_tags") the_tags(''); ?></span><?php endif;?><?php edit_post_link('Edit', ' &#124; ', ''); ?>
+	</span><!-- .entry-header -->
+<div class="gap"></div><?php if (magazine_get_option('magazine_author' ) =='1' ) {load_template(get_template_directory() . '/includes/author.php'); } ?>
 
 		<div id="single-nav" class="clearfix">
-			<div id="single-nav-left"><?php previous_post_link('&laquo; <strong class="navi">%link</strong>'); ?></div>
-		<div id="single-nav-right"><?php next_post_link('<strong class="navi">%link</strong> &raquo;'); ?></div>
+			<div id="single-nav-left"><?php previous_post_link('&laquo;<strong>%link</strong>'); ?></div>
+		<div id="single-nav-right"><?php next_post_link('<strong>%link</strong>&raquo;'); ?></div>
         </div>
         <!-- END single-nav -->
 			<div class="comments">	<?php comments_template(); ?>	</div> <!-- end div .comments -->	</div> <!-- end div .post -->

@@ -24,7 +24,7 @@
 				<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?> <?php _e('Blog Archives', 'magazine'); ?> <?php } ?>
 				</div>
 				<?php while(have_posts())  : the_post(); ?>
-					<div id="post-<?php the_ID(); ?>" class="post clearfix">
+				
 					<?php get_template_part('/includes/post'); ?>
 					<?php endwhile; ?>
 					<?php else : ?>

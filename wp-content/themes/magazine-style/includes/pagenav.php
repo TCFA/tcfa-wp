@@ -7,7 +7,4 @@
 </div> <!-- end div #pagenavi --><p></p>
 <div class="gap"></div>
 
-<div id="footerads">
-<?php if ( magazine_get_option('magazine_ad1') <> "" ) { echo stripslashes(magazine_get_option('magazine_ad1')); } ?>
-</div>
 

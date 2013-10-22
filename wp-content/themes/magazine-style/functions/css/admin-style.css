@@ -2,10 +2,68 @@
 /* Magazine Style Admin Styles CSS */
 /*-------------------------------------------------------------------------------------------*/
 #donate-form {
-background: white;
-padding: 4px 0px 0px 6px;
+background: #FFF;
 overflow: hidden;
+width: 100%;
+padding: 6px;
+}
+.donlogo{
+float:left;
+padding-right: 22px;
+}
+.donbut{
+padding-left: 14%;
+}
+.dontext{
+float: right;
+border-left: 1px solid;
+padding-left: 20px;
+font-weight: bold;
+font-size: 11px;
+color: #5200FF;
+}
+.dt {
+overflow: hidden;
+background-origin: padding-box;
+width: 1000px;
+box-shadow: 
+#DDD 0px 0px 5px 5px;
+margin-top: 20px;
+}
 
+.dt .button-secondary {
+font-weight: bold;
+color: green;
+}
+#of-option-generalsettings-tab{
+background-image: url("../images/tools.png");
+padding-left: 28px;
+background-repeat: no-repeat;
+background-position: 2% 10px;
+font-weight: 700;
+border-top: 1px solid #CCC;
+width: 160px;
+}
+#of-option-adsmanagement-tab{
+background-image: url("../images/layout.png");
+padding-left: 28px;
+background-repeat: no-repeat;
+background-position: 2% 10px;
+font-weight: 700;
+}
+#of-option-customcss-tab{
+background-image: url("../images/style.png");
+padding-left: 28px;
+background-repeat: no-repeat;
+background-position: 2% 10px;
+font-weight: 700;
+}
+#of-option-socialmedia-tab{
+background-image: url("../images/graph.png");
+padding-left: 28px;
+background-repeat: no-repeat;
+background-position: 2% 10px;
+font-weight: 700;
 }
 
 .alignleft {
@@ -15,22 +73,7 @@ float: left;
 padding: 10px 0 0 0;
 }
 
-.dt {
-background: white;
-overflow: hidden;
-padding: 6px 0px 1px 7px;
-background-origin: padding-box;
-width: 991px;
-box-shadow: 
-#DDD 0px 0px 5px 5px;
-margin-top: 20px;
-}
 
-.dt .button-secondary {
-font-weight: bold;
-color: green;
-
-}
 
 .clearfix{
 	clear:both;
@@ -82,11 +125,16 @@ background: #FDF9F1;
 #optionsframework .group h2{
     padding-top: 8px; 
     padding-left: 10px;
+	color: #06AFE4;
 }
 #header{
-    background: url(../images/Settings.png) no-repeat 11px 44% #e1e1e1;
+    background: url(../images/Settings.png) no-repeat 11px 44% #333;
     padding-top: 14px;
     padding-bottom:21px; 
+	color: #FFF;
+}
+#header h2{
+	color: #FFF;
 }
 #header .logo{
     margin-left: 50px;

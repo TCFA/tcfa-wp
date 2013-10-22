@@ -12,8 +12,7 @@
 							<div class="entry" class="clearfix">
 																
 								<?php the_content(); ?>
-								<?php wp_link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
-								<!-- <?php trackback_rdf(); ?> -->
+								<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'magazine' ), 'after' => '</div>' ) ); ?>
 							</div> <!-- end div .entry -->
 						<?php load_template (get_template_directory() . '/includes/postmeta.php'); ?>
 							<div class="comments">
