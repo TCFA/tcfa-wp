@@ -8,7 +8,7 @@
 			<?php if ( magazine_get_option('magazine_ad2') <> "" ) { echo stripslashes(magazine_get_option('magazine_ad2')); } ?>
 			<?php the_content(); ?> 
 				
-								<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'magazine' ), 'after' => '</div>' ) ); ?>
+								<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'magazine-child' ), 'after' => '</div>' ) ); ?>
 							</div> <!-- end div .entry -->
 <span class="postmeta_box">
 		<?php get_template_part('/includes/postmeta'); ?><?php  if (get_the_tags()) :?> <span class="tags"><?php if("the_tags") the_tags(''); ?></span><?php endif;?><?php edit_post_link('Edit', ' &#124; ', ''); ?>
@@ -24,7 +24,7 @@
 			<?php endwhile; ?>
 			<?php else : ?>
 				<div class="post">
-					<h3><?php _e('404 Error&#58; Not Found', 'magazine' ); ?></h3>
+					<h3><?php _e('404 Error&#58; Not Found', 'magazine-child' ); ?></h3>
 				</div>
 			<?php endif; ?>
 		</div> <!-- end div #content -->

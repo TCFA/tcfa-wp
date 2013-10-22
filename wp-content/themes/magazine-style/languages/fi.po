@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TCFA v1\n"
-"POT-Creation-Date: 2013-09-27 22:30+0200\n"
-"PO-Revision-Date: 2013-09-27 23:13+0200\n"
+"POT-Creation-Date: 2013-10-22 21:48+0200\n"
+"PO-Revision-Date: 2013-10-22 21:48+0200\n"
 "Last-Translator: Joni Hämäläinen <snurppa@gmail.com>\n"
 "Language-Team: TCFA <tcfa@tcfa.fi>\n"
 "Language: FI\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../404.php:9 ../archive.php:33 ../image.php:105 ../index.php:16
-#: ../page.php:27 ../search.php:21 ../single.php:33
+#: ../404.php:9 ../archive.php:33 ../image.php:97 ../index.php:15
+#: ../page.php:26 ../search.php:21 ../single.php:27
 msgid "404 Error&#58; Not Found"
 msgstr "Virhe 404 - Sivua ei löytynyt"
 
@@ -45,60 +45,41 @@ msgstr "Tämä artikkeli on salasanasuojattu. Anna salasana nähdäksesi."
 msgid "comments"
 msgstr "kommentit"
 
-#: ../functions.php:86
-#, php-format
-msgid ""
-"<span class=\"%1$s\">Posted on </span>%2$s<span class=\"%3$s\"> by </span>"
-"%4$s"
-msgstr ""
+#: ../functions.php:77
+#, fuzzy, php-format
+msgid "%2$s  %4$s"
+msgstr "%1$s klo %2$s"
 
-#: ../functions.php:96
+#: ../functions.php:87
 #, php-format
 msgid "View all posts by %s"
 msgstr "Käyttäjän %s artikkelit"
 
-#: ../functions.php:132
+#: ../functions.php:123
 msgid "Navigation"
 msgstr "Navigaatio"
 
-#: ../functions.php:191
+#: ../functions.php:182
 msgid "Sidebar Right"
 msgstr ""
 
-#: ../functions.php:198
+#: ../functions.php:189
 msgid "Bottom Menu 1"
 msgstr "Alavalikko 1"
 
-#: ../functions.php:206
+#: ../functions.php:197
 msgid "Bottom Menu 2"
 msgstr "Alavalikko 2"
 
-#: ../functions.php:214
+#: ../functions.php:205
 msgid "Bottom Menu 3"
 msgstr "Alavalikko 3"
 
-#: ../functions.php:222
+#: ../functions.php:213
 msgid "Bottom Menu 4"
 msgstr "Alavalikko 4"
 
-#: ../functions.php:246
-msgid "&#171; Prev"
-msgstr "&#171; Edellinen"
-
-#: ../functions.php:247
-msgid "Next &raquo;"
-msgstr "Seuraava &raquo;"
-
-#: ../functions.php:251
-#, fuzzy
-msgid "Page "
-msgstr "Sivu"
-
-#: ../functions.php:251
-msgid " of "
-msgstr "/"
-
-#: ../functions.php:283
+#: ../functions.php:272
 #, php-format
 msgid "Page %s"
 msgstr "Sivu %s"
@@ -117,66 +98,16 @@ msgstr ""
 msgid "Edit"
 msgstr "Muokkaa"
 
-#: ../image.php:70
+#: ../image.php:70 ../page.php:15 ../single.php:11
 msgid "Pages:"
 msgstr "Sivut:"
-
-#: ../searchform.php:3
-msgid "Search"
-msgstr "Hae"
-
-#: ../functions/magazine-functions.php:9
-msgid "Home"
-msgstr "Aloitussivu"
-
-#: ../functions/magazine-functions.php:25
-msgid "Archive by category \""
-msgstr ""
-
-#: ../functions/magazine-functions.php:68
-msgid "Search results for \""
-msgstr ""
-
-#: ../functions/magazine-functions.php:70
-msgid "Posts tagged \""
-msgstr ""
-
-#: ../functions/magazine-functions.php:74
-msgid "Articles posted by "
-msgstr ""
-
-#: ../functions/magazine-functions.php:76
-msgid "Error 404"
-msgstr "Virhe 404 - Sivua ei löytynyt"
-
-#: ../functions/magazine-functions.php:82
-msgid "Page"
-msgstr "Sivu"
-
-#: ../functions/magazine-functions.php:154
-msgid "Your comment is awaiting moderation."
-msgstr "Kommenttisi odottaa moderointia."
-
-#: ../functions/magazine-functions.php:159
-#, php-format
-msgid "%1$s at %2$s"
-msgstr "%1$s klo %2$s"
-
-#: ../functions/magazine-functions.php:162
-#: ../functions/magazine-functions.php:183
-#, fuzzy
-msgid "(Edit)"
-msgstr "Muokkaa"
-
-#: ../functions/magazine-functions.php:181
-msgid "Pingback:"
-msgstr ""
 
 #: ../functions/options-framework.php:181
 msgid "Options"
 msgstr "Asetukset"
 
-#: ../functions/options-framework.php:183 ../includes/adfun.php:50
+#: ../functions/options-framework.php:183 ../includes/adfun.php:49
+#: ../includes/wrock.php:7
 msgid "http://www.wrock.org/magazine-style"
 msgstr ""
 
@@ -221,7 +152,7 @@ msgid "AD Code For Single Post"
 msgstr ""
 
 #: ../functions/theme-options.php:97
-msgid "AD Code For Fotter"
+msgid "AD Code For Footer"
 msgstr ""
 
 #: ../functions/theme-options.php:105 ../functions/theme-options.php:107
@@ -284,39 +215,69 @@ msgstr ""
 msgid "Copyright &#169;"
 msgstr ""
 
-#: ../includes/adfun.php:44
+#: ../includes/adfun.php:43
 msgid "Powered by"
 msgstr ""
 
-#: ../includes/adfun.php:44
+#: ../includes/adfun.php:43
 msgid "WordPress"
 msgstr ""
 
-#: ../includes/adfun.php:50
+#: ../includes/adfun.php:49
 #, php-format
 msgid "Magazine Style Theme %s"
 msgstr ""
 
-#: ../includes/adfun.php:52
-msgid "Go to Top"
-msgstr "Ylös"
+#: ../includes/adfun.php:51
+msgid "&#8593;"
+msgstr ""
 
-#: ../includes/ltposts.php:3
-msgid "Latest"
-msgstr "Viimeisimmät"
+#~ msgid "&#171; Prev"
+#~ msgstr "&#171; Edellinen"
 
-#: ../includes/post.php:16 ../includes/post.php:32
-msgid "Continue reading &raquo;"
-msgstr "Lue lisää &raquo;"
+#~ msgid "Next &raquo;"
+#~ msgstr "Seuraava &raquo;"
 
-#: ../includes/postmeta.php:7
-msgid "No Comment"
-msgstr "Ei kommentteja"
+#, fuzzy
+#~ msgid "Page "
+#~ msgstr "Sivu"
 
-#: ../includes/postmeta.php:7
-msgid "1 Comment"
-msgstr "1 kommentti"
+#~ msgid " of "
+#~ msgstr "/"
 
-#: ../includes/postmeta.php:7
-msgid "% Comments"
-msgstr "% kommenttia"
+#~ msgid "Search"
+#~ msgstr "Hae"
+
+#~ msgid "Home"
+#~ msgstr "Aloitussivu"
+
+#~ msgid "Error 404"
+#~ msgstr "Virhe 404 - Sivua ei löytynyt"
+
+#~ msgid "Page"
+#~ msgstr "Sivu"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Kommenttisi odottaa moderointia."
+
+#, fuzzy
+#~ msgid "(Edit)"
+#~ msgstr "Muokkaa"
+
+#~ msgid "Go to Top"
+#~ msgstr "Ylös"
+
+#~ msgid "Latest"
+#~ msgstr "Viimeisimmät"
+
+#~ msgid "Continue reading &raquo;"
+#~ msgstr "Lue lisää &raquo;"
+
+#~ msgid "No Comment"
+#~ msgstr "Ei kommentteja"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 kommentti"
+
+#~ msgid "% Comments"
+#~ msgstr "% kommenttia"

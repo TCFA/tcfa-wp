@@ -1,4 +1,4 @@
-<div id="latesthd"><h4><?php _e('Latest', 'magazine') ?></h4></div>
+<div id="latesthd"><h4><?php _e('Latest', 'magazine-child') ?></h4></div>
 <div id="ltpost">
 <?php 
 /*

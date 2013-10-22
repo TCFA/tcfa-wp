@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TCFA Child  theme\n"
+"POT-Creation-Date: 2013-10-22 21:41+0200\n"
+"PO-Revision-Date: 2013-10-22 21:46+0200\n"
+"Last-Translator: Joni Hämäläinen <snurppa@gmail.com>\n"
+"Language-Team: TCFA <tcfa@tcfa.fi>\n"
+"Language: FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../functions.php:14
+msgid "&#171; Prev"
+msgstr "&#171; Edellinen"
+
+#: ../functions.php:15
+msgid "Next &raquo;"
+msgstr "Seuraava &raquo;"
+
+#: ../functions.php:18
+msgid "Page "
+msgstr "Sivu"
+
+#: ../functions.php:18
+msgid " of "
+msgstr " / "
+
+#: ../searchform.php:3
+msgid "Search"
+msgstr "Hae"
+
+#: ../single.php:11
+msgid "Pages:"
+msgstr "Sivuja:"
+
+#: ../single.php:27
+msgid "404 Error&#58; Not Found"
+msgstr "Virhe 404 - Sivua ei löytynyt"
+
+#: ../functions/magazine-functions.php:9
+msgid "Home"
+msgstr "Etusivu"
+
+#: ../functions/magazine-functions.php:25
+msgid "Archive by category \""
+msgstr "Kategoria \""
+
+#: ../functions/magazine-functions.php:68
+msgid "Search results for \""
+msgstr "Hakutulokset merkkijonolle \""
+
+#: ../functions/magazine-functions.php:70
+msgid "Posts tagged \""
+msgstr "Uutiset tageilla \""
+
+#: ../functions/magazine-functions.php:74
+msgid "Articles posted by "
+msgstr ""
+
+#: ../functions/magazine-functions.php:76
+msgid "Error 404"
+msgstr "Virhe 404 - Sivua ei löytynyt"
+
+#: ../functions/magazine-functions.php:82
+msgid "Page"
+msgstr "Sivu"
+
+#: ../functions/magazine-functions.php:154
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa moderointia."
+
+#: ../functions/magazine-functions.php:159
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s klo %2$s"
+
+#: ../functions/magazine-functions.php:162
+#: ../functions/magazine-functions.php:183
+msgid "(Edit)"
+msgstr "(Muokkaa)"
+
+#: ../functions/magazine-functions.php:181
+msgid "Pingback:"
+msgstr ""
+
+#: ../includes/ltposts.php:1
+msgid "Latest"
+msgstr "Viimeisimmät"
+
+#: ../includes/post.php:11 ../includes/post.php:19
+msgid "Continue reading &raquo;"
+msgstr "Lue lisää &raquo;"
+
+#: ../includes/postmeta.php:4
+msgid "No Comment"
+msgstr "Ei kommentteja"
+
+#: ../includes/postmeta.php:4
+msgid "1 Comment"
+msgstr "Yksi kommentti"
+
+#: ../includes/postmeta.php:4
+msgid "% Comments"
+msgstr "% kommenttia"

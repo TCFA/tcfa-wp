@@ -4,9 +4,9 @@ ob_start();
 /* Breadcrumbs Plugin
   /*----------------------------------------------------------------------------------- */
 
-function magazine_child_breadcrumbs() {
+function magazine_breadcrumbs() {
     $delimiter = '&raquo;';
-    $home = __('Home', 'magazine'); // text for the 'Home' link
+    $home = __('Home', 'magazine-child'); // text for the 'Home' link
     $before = '<span class="current">'; // tag before the current crumb
     $after = '</span>'; // tag after the current crumb
     echo '<div id="crumbs">';
@@ -22,7 +22,7 @@ function magazine_child_breadcrumbs() {
         $parentCat = get_category($thisCat->parent);
         if ($thisCat->parent != 0)
             echo(get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' '));
-        echo $before . __('Archive by category "', 'magazine') . single_cat_title('', false) . '"' . $after;
+        echo $before . __('Archive by category "', 'magazine-child') . single_cat_title('', false) . '"' . $after;
     } elseif (is_day()) {
         echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
         echo '<a href="' . get_month_link(get_the_time('Y'), get_the_time('m')) . '">' . get_the_time('F') . '</a> ' . $delimiter . ' ';
@@ -65,21 +65,21 @@ function magazine_child_breadcrumbs() {
             echo $crumb . ' ' . $delimiter . ' ';
         echo $before . get_the_title() . $after;
     } elseif (is_search()) {
-        echo $before . __('Search results for "','magazine') . get_search_query() . '"' . $after;
+        echo $before . __('Search results for "','magazine-child') . get_search_query() . '"' . $after;
     } elseif (is_tag()) {
-        echo $before . __('Posts tagged "','magazine') . single_tag_title('', false) . '"' . $after;
+        echo $before . __('Posts tagged "','magazine-child') . single_tag_title('', false) . '"' . $after;
     } elseif (is_author()) {
         global $author;
         $userdata = get_userdata($author);
-        echo $before . __('Articles posted by ','magazine') . $userdata->display_name . $after;
+        echo $before . __('Articles posted by ','magazine-child') . $userdata->display_name . $after;
     } elseif (is_404()) {
-        echo $before . __('Error 404', 'magazine') . $after;
+        echo $before . __('Error 404', 'magazine-child') . $after;
     }
 
     if (get_query_var('paged')) {
         if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author())
             echo ' (';
-        echo __('Page','magazine') . ' ' . get_query_var('paged');
+        echo __('Page','magazine-child') . ' ' . get_query_var('paged');
         if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author())
             echo ')';
     }
@@ -91,7 +91,7 @@ function magazine_child_breadcrumbs() {
     /* Custom CSS Styles */
     /* ----------------------------------------------------------------------------------- */
 
-    function magazine_child_of_head_css() {
+    function magazine_of_head_css() {
         $output = '';
         $custom_css = magazine_get_option('magazine_customcss');
         if ($custom_css <> '') {
@@ -110,7 +110,7 @@ function magazine_child_breadcrumbs() {
 /* Function to call first uploaded image in functions file
   /*----------------------------------------------------------------------------------- */
 
-function magazine_child_main_image() {
+function magazine_main_image() {
     global $post, $posts;
     //This is required to set to Null
     $id = '';
@@ -141,7 +141,7 @@ if ('magazine_comment') :
      *
      * Used as a callback by wp_list_comments() for displaying the comments.
      */
-    function magazine_child_comment($comment, $args, $depth) {
+    function magazine_comment($comment, $args, $depth) {
         $GLOBALS['comment'] = $comment;
         switch ($comment->comment_type) :
             case '' :
@@ -151,15 +151,15 @@ if ('magazine_comment') :
                         <div class="comment-author vcard"> <?php echo get_avatar($comment, 40); ?> <?php printf('%s <span class="says">says:</span>' . sprintf('<cite class="fn">%s</cite>', get_comment_author_link())); ?> </div>
                         <!-- .comment-author .vcard -->
                         <?php if ($comment->comment_approved == '0') : ?>
-                            <em> <?php _e('Your comment is awaiting moderation.', 'magazine'); ?> </em> <br />
+                            <em> <?php _e('Your comment is awaiting moderation.', 'magazine-child'); ?> </em> <br />
                         <?php endif; ?>
                         <div class="comment-meta commentmetadata"><a href="<?php echo esc_url(get_comment_link($comment->comment_ID)); ?>">
                                 <?php
                                 /* translators: 1: date, 2: time */
-                                printf(__('%1$s at %2$s', 'magazine') . get_comment_date(), get_comment_time());
+                                printf(__('%1$s at %2$s', 'magazine-child') . get_comment_date(), get_comment_time());
                                 ?>
                             </a>
-                            <?php edit_comment_link('(Edit)', ' ');
+                            <?php edit_comment_link(__('(Edit)','magazine-child'), ' ');
                             ?>
                         </div>
                         <!-- .comment-meta .commentmetadata -->
@@ -178,9 +178,9 @@ if ('magazine_comment') :
                 case 'trackback' :
                     ?>
                 <li class="post pingback">
-                    <p> <?php echo __('Pingback:', 'magazine'); ?>
+                    <p> <?php echo __('Pingback:', 'magazine-child'); ?>
                         <?php comment_author_link(); ?>
-                        <?php edit_comment_link(__('(Edit)'), ' '); ?>
+                        <?php edit_comment_link(__('(Edit)', 'magazine-child'), ' '); ?>
                     </p>
                     <?php
                     break;
@@ -194,7 +194,7 @@ if ('magazine_comment') :
     /* ----------------------------------------------------------------------------------- */
     /* Add Favicon
       /*----------------------------------------------------------------------------------- */
-    function magazine_child_childtheme_favicon() {
+    function magazine_childtheme_favicon() {
         if (magazine_get_option('magazine_favicon') != '') {
             echo '<link rel="shortcut icon" href="' . magazine_get_option('magazine_favicon') . '"/>' . "\n";
         }
