@@ -1,4 +1,11 @@
 <?php
+
+/* COMMENT OUT ORIGINAL functions.php INCLUDE IN ROW 3 !!!!
+ * If Magazine-theme is updated, it will overwrite comment and create Fatal PHP errors.
+ */
+include_once get_stylesheet_directory() . '/functions/magazine-functions.php';
+
+
 function magazine_child_pagenavi() {
   global $wp_query, $wp_rewrite;
   $pages = '';

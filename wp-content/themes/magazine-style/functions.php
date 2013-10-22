@@ -1,6 +1,6 @@
 <?php
 ob_start();
-include_once get_template_directory() . '/functions/magazine-functions.php';
+//include_once get_template_directory() . '/functions/magazine-functions.php';
 
     /* ----------------------------------------------------------------------------------- */
     /* Options Framework Theme
