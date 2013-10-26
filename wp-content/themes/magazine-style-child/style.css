@@ -76,3 +76,11 @@ ol.commentlist li div.reply {
 	border-bottom: none;
 
 }
+#sidebar {
+	width: 30%;
+}
+.irw-slider li {
+	display: block;
+	text-align: center;
+}
+
