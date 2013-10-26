@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TCFA Child  theme\n"
-"POT-Creation-Date: 2013-10-22 22:03+0200\n"
-"PO-Revision-Date: 2013-10-22 22:03+0200\n"
+"POT-Creation-Date: 2013-10-26 12:08+0200\n"
+"PO-Revision-Date: 2013-10-26 12:33+0200\n"
 "Last-Translator: Joni Hämäläinen <snurppa@gmail.com>\n"
 "Language-Team: TCFA <tcfa@tcfa.fi>\n"
 "Language: FI\n"
@@ -15,68 +15,29 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../functions.php:14
+#: ../functions.php:21
 msgid "&#171; Prev"
 msgstr "&#171; Edellinen"
 
-#: ../functions.php:15
+#: ../functions.php:22
 msgid "Next &raquo;"
 msgstr "Seuraava &raquo;"
 
-#: ../functions.php:18
+#: ../functions.php:25
 msgid "Page "
 msgstr "Sivu"
 
-#: ../functions.php:18
+#: ../functions.php:25
 msgid " of "
 msgstr " / "
 
-#: ../magazine-functions.php:9 ../functions/magazine-functions.php:9
-msgid "Home"
+#: ../index.php:7
+msgid "Frontpage"
 msgstr "Etusivu"
 
-#: ../magazine-functions.php:25 ../functions/magazine-functions.php:25
-msgid "Archive by category \""
-msgstr "Kategoria \""
-
-#: ../magazine-functions.php:68 ../functions/magazine-functions.php:68
-msgid "Search results for \""
-msgstr "Hakutulokset merkkijonolle \""
-
-#: ../magazine-functions.php:70 ../functions/magazine-functions.php:70
-msgid "Posts tagged \""
-msgstr "Uutiset tageilla \""
-
-#: ../magazine-functions.php:74 ../functions/magazine-functions.php:74
-msgid "Articles posted by "
-msgstr ""
-
-#: ../magazine-functions.php:76 ../functions/magazine-functions.php:76
-msgid "Error 404"
+#: ../index.php:15 ../single.php:27
+msgid "404 Error&#58; Not Found"
 msgstr "Virhe 404 - Sivua ei löytynyt"
-
-#: ../magazine-functions.php:82 ../functions/magazine-functions.php:82
-msgid "Page"
-msgstr "Sivu"
-
-#: ../magazine-functions.php:154 ../functions/magazine-functions.php:154
-msgid "Your comment is awaiting moderation."
-msgstr "Kommenttisi odottaa moderointia."
-
-#: ../magazine-functions.php:159 ../functions/magazine-functions.php:159
-#, php-format
-msgid "%1$s at %2$s"
-msgstr "%1$s klo %2$s"
-
-#: ../magazine-functions.php:162 ../magazine-functions.php:183
-#: ../functions/magazine-functions.php:162
-#: ../functions/magazine-functions.php:183
-msgid "(Edit)"
-msgstr "(Muokkaa)"
-
-#: ../magazine-functions.php:181 ../functions/magazine-functions.php:181
-msgid "Pingback:"
-msgstr ""
 
 #: ../searchform.php:3
 msgid "Search"
@@ -90,9 +51,55 @@ msgstr "Haku"
 msgid "Pages:"
 msgstr "Sivuja:"
 
-#: ../single.php:27
-msgid "404 Error&#58; Not Found"
+#: ../single.php:14
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: ../functions/magazine-functions.php:9
+msgid "Home"
+msgstr "Etusivu"
+
+#: ../functions/magazine-functions.php:25
+msgid "Archive by category \""
+msgstr "Kategoria \""
+
+#: ../functions/magazine-functions.php:68
+msgid "Search results for \""
+msgstr "Hakutulokset merkkijonolle \""
+
+#: ../functions/magazine-functions.php:70
+msgid "Posts tagged \""
+msgstr "Uutiset tageilla \""
+
+#: ../functions/magazine-functions.php:74
+msgid "Articles posted by "
+msgstr ""
+
+#: ../functions/magazine-functions.php:76
+msgid "Error 404"
 msgstr "Virhe 404 - Sivua ei löytynyt"
+
+#: ../functions/magazine-functions.php:82
+msgid "Page"
+msgstr "Sivu"
+
+#: ../functions/magazine-functions.php:154
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa moderointia."
+
+#: ../functions/magazine-functions.php:159
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s klo %2$s"
+
+#: ../functions/magazine-functions.php:162
+#: ../functions/magazine-functions.php:183
+msgid "(Edit)"
+msgstr "(Muokkaa)"
+
+#: ../functions/magazine-functions.php:181
+msgid "Pingback:"
+msgstr ""
 
 #: ../includes/ltposts.php:1
 msgid "Latest"
@@ -103,7 +110,7 @@ msgid "Continue reading &raquo;"
 msgstr "Lue lisää &raquo;"
 
 #: ../includes/postmeta.php:4
-msgid "No Comment"
+msgid "No Comments"
 msgstr "Ei kommentteja"
 
 #: ../includes/postmeta.php:4

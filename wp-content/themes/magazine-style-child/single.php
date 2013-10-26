@@ -11,7 +11,7 @@
 								<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'magazine-child' ), 'after' => '</div>' ) ); ?>
 							</div> <!-- end div .entry -->
 <span class="postmeta_box">
-		<?php get_template_part('/includes/postmeta'); ?><?php  if (get_the_tags()) :?> <span class="tags"><?php if("the_tags") the_tags(''); ?></span><?php endif;?><?php edit_post_link('Edit', ' &#124; ', ''); ?>
+		<?php get_template_part('/includes/postmeta'); ?><?php  if (get_the_tags()) :?> <span class="tags"><?php if("the_tags") the_tags(''); ?></span><?php endif;?><?php edit_post_link(__('Edit', 'magazine-child'), ' &#124; ', ''); ?>
 	</span><!-- .entry-header -->
 <div class="gap"></div><?php if (magazine_get_option('magazine_author' ) =='1' ) {load_template(get_template_directory() . '/includes/author.php'); } ?>
 
