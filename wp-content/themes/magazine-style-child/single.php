@@ -8,23 +8,23 @@
 			<?php if ( magazine_get_option('magazine_ad2') <> "" ) { echo stripslashes(magazine_get_option('magazine_ad2')); } ?>
 			<?php the_content(); ?> 
 				
-								<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'magazine-child' ), 'after' => '</div>' ) ); ?>
+								<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'magazine' ), 'after' => '</div>' ) ); ?>
 							</div> <!-- end div .entry -->
 <span class="postmeta_box">
-		<?php get_template_part('/includes/postmeta'); ?><?php  if (get_the_tags()) :?> <span class="tags"><?php if("the_tags") the_tags(''); ?></span><?php endif;?><?php edit_post_link(__('Edit', 'magazine-child'), ' &#124; ', ''); ?>
+		<?php get_template_part('/includes/postmeta'); ?><?php  if (get_the_tags()) :?> <span class="tags"><?php if("the_tags") the_tags(''); ?></span><?php endif;?><?php edit_post_link(__('Edit', 'magazine'), ' &#124; ', ''); ?>
 	</span><!-- .entry-header -->
 <div class="gap"></div><?php if (magazine_get_option('magazine_author' ) =='1' ) {load_template(get_template_directory() . '/includes/author.php'); } ?>
 
 		<div id="single-nav" class="clearfix">
-			<div id="single-nav-left"><?php previous_post_link('&laquo;<strong>%link</strong>'); ?></div>
-		<div id="single-nav-right"><?php next_post_link('<strong>%link</strong>&raquo;'); ?></div>
+			<div id="single-nav-left"><?php previous_post_link('&laquo; <strong>%link</strong>'); ?></div>
+		<div id="single-nav-right"><?php next_post_link('<strong>%link</strong> &raquo;'); ?></div>
         </div>
         <!-- END single-nav -->
 			<div class="comments">	<?php comments_template(); ?>	</div> <!-- end div .comments -->	</div> <!-- end div .post -->
 			<?php endwhile; ?>
 			<?php else : ?>
 				<div class="post">
-					<h3><?php _e('404 Error&#58; Not Found', 'magazine-child' ); ?></h3>
+					<h3><?php _e('404 Error&#58; Not Found', 'magazine' ); ?></h3>
 				</div>
 			<?php endif; ?>
 		</div> <!-- end div #content -->

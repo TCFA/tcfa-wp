@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TCFA Child  theme\n"
-"POT-Creation-Date: 2013-10-26 12:08+0200\n"
-"PO-Revision-Date: 2013-10-26 12:33+0200\n"
+"POT-Creation-Date: 2013-10-27 14:37+0200\n"
+"PO-Revision-Date: 2013-10-27 14:38+0200\n"
 "Last-Translator: Joni Hämäläinen <snurppa@gmail.com>\n"
 "Language-Team: TCFA <tcfa@tcfa.fi>\n"
 "Language: FI\n"
@@ -14,30 +14,65 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: ../../magazine-style\n"
 
-#: ../functions.php:21
+#: ../archives.php:17
+msgid "Archives by Category:"
+msgstr "Kategoriat"
+
+#: ../archives.php:27
+msgid "Archives by Month:"
+msgstr "Kuukausittain:"
+
+#: ../categorylist.php:15 ../page.php:15 ../single.php:11
+#: ../../magazine-style/image.php:70 ../../magazine-style/page.php:15
+#: ../../magazine-style/single.php:11
+msgid "Pages:"
+msgstr "Sivuja:"
+
+#: ../categorylist.php:26 ../index.php:15 ../page.php:26 ../single.php:27
+#: ../../magazine-style/404.php:9 ../../magazine-style/archive.php:33
+#: ../../magazine-style/image.php:97 ../../magazine-style/index.php:15
+#: ../../magazine-style/page.php:26 ../../magazine-style/search.php:21
+#: ../../magazine-style/single.php:27
+msgid "404 Error&#58; Not Found"
+msgstr "Virhe 404 - Sivua ei löytynyt"
+
+#: ../footer.php:10 ../../magazine-style/includes/adfun.php:43
+msgid "Copyright &#169;"
+msgstr ""
+
+#: ../footer.php:12 ../../magazine-style/includes/adfun.php:43
+msgid "Powered by"
+msgstr ""
+
+#: ../footer.php:12 ../../magazine-style/includes/adfun.php:43
+msgid "WordPress"
+msgstr ""
+
+#: ../footer.php:17 ../../magazine-style/includes/adfun.php:51
+msgid "&#8593;"
+msgstr ""
+
+#: ../functions.php:20
 msgid "&#171; Prev"
 msgstr "&#171; Edellinen"
 
-#: ../functions.php:22
+#: ../functions.php:21
 msgid "Next &raquo;"
 msgstr "Seuraava &raquo;"
 
-#: ../functions.php:25
+#: ../functions.php:24
 msgid "Page "
-msgstr "Sivu"
+msgstr "Sivu "
 
-#: ../functions.php:25
+#: ../functions.php:24
 msgid " of "
 msgstr " / "
 
 #: ../index.php:7
 msgid "Frontpage"
 msgstr "Etusivu"
-
-#: ../index.php:15 ../single.php:27
-msgid "404 Error&#58; Not Found"
-msgstr "Virhe 404 - Sivua ei löytynyt"
 
 #: ../searchform.php:3
 msgid "Search"
@@ -47,11 +82,7 @@ msgstr "Hae"
 msgid "Go"
 msgstr "Haku"
 
-#: ../single.php:11
-msgid "Pages:"
-msgstr "Sivuja:"
-
-#: ../single.php:14
+#: ../single.php:14 ../../magazine-style/image.php:22
 msgid "Edit"
 msgstr "Muokkaa"
 
@@ -105,7 +136,7 @@ msgstr ""
 msgid "Latest"
 msgstr "Viimeisimmät"
 
-#: ../includes/post.php:11 ../includes/post.php:19
+#: ../includes/post.php:11 ../includes/post.php:18
 msgid "Continue reading &raquo;"
 msgstr "Lue lisää &raquo;"
 
@@ -120,3 +151,193 @@ msgstr "Yksi kommentti"
 #: ../includes/postmeta.php:4
 msgid "% Comments"
 msgstr "% kommenttia"
+
+#: ../../magazine-style/404.php:12
+msgid ""
+"Sorry, but the page you are trying to reach is unavailable or does not exist."
+msgstr "Valitettavasti hakemaasi sivua ei löydy."
+
+#: ../../magazine-style/404.php:13
+msgid "You may interested with this"
+msgstr "Katso myös nämä"
+
+#: ../../magazine-style/archive.php:15
+msgid "Archive for"
+msgstr "Kategoria"
+
+#: ../../magazine-style/archive.php:24
+msgid "Blog Archives"
+msgstr "Arkistot"
+
+#: ../../magazine-style/comments.php:6
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Julkaisu on salasanasuojattu. Ole hyvä ja anna salasana."
+
+#: ../../magazine-style/comments.php:12
+msgid "comments"
+msgstr "Kommentit"
+
+#: ../../magazine-style/functions.php:77
+#, fuzzy, php-format
+msgid "%2$s  %4$s"
+msgstr "%1$s klo %2$s"
+
+#: ../../magazine-style/functions.php:123
+msgid "Navigation"
+msgstr ""
+
+#: ../../magazine-style/functions.php:182
+msgid "Sidebar Right"
+msgstr ""
+
+#: ../../magazine-style/functions.php:189
+msgid "Bottom Menu 1"
+msgstr ""
+
+#: ../../magazine-style/functions.php:197
+msgid "Bottom Menu 2"
+msgstr ""
+
+#: ../../magazine-style/functions.php:205
+msgid "Bottom Menu 3"
+msgstr ""
+
+#: ../../magazine-style/functions.php:213
+msgid "Bottom Menu 4"
+msgstr ""
+
+#: ../../magazine-style/functions.php:272
+#, php-format
+msgid "Page %s"
+msgstr "Sivu %s"
+
+#: ../../magazine-style/image.php:11
+#, php-format
+msgid ""
+"<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class="
+"\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></"
+"span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</"
+"a>."
+msgstr ""
+
+#: ../../magazine-style/functions/options-framework.php:181
+msgid "Options"
+msgstr ""
+
+#: ../../magazine-style/functions/options-framework.php:183
+#: ../../magazine-style/includes/adfun.php:49
+#: ../../magazine-style/includes/wrock.php:7
+msgid "http://www.wrock.org/magazine-style"
+msgstr ""
+
+#: ../../magazine-style/functions/options-medialibrary-uploader.php:108
+msgid "View File"
+msgstr "Näytä tiedosto"
+
+#: ../../magazine-style/functions/options-medialibrary-uploader.php:183
+msgid "Gallery"
+msgstr ""
+
+#: ../../magazine-style/functions/options-medialibrary-uploader.php:183
+msgid "Previously Uploaded"
+msgstr "Aiemmin ladatut"
+
+#: ../../magazine-style/functions/theme-options.php:57
+msgid "General Settings"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:60
+msgid "Custom Favicon URL"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:65
+#, fuzzy
+msgid "Latest Posts"
+msgstr "Viimeisimmät"
+
+#: ../../magazine-style/functions/theme-options.php:70
+msgid "Show Author Profile"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:79
+msgid "Ads Management"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:87
+msgid "Ads code Below Main Navigation."
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:92
+msgid "AD Code For Single Post"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:97
+msgid "AD Code For Footer"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:105
+#: ../../magazine-style/functions/theme-options.php:107
+msgid "Custom CSS"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:113
+msgid "Social Media"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:116
+msgid "Show Social Follow ICONs"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:121
+msgid "Facebook URL"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:126
+msgid "Twitter URL"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:131
+msgid "RSS Feed URL"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:136
+msgid "Google+ URL"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:141
+msgid "Linked In URL"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:146
+msgid "YouTube In URL"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:151
+msgid "Pinterest In URL"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:156
+msgid "Skype In URL"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:161
+msgid "Vimeo In URL"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:166
+msgid "Flickr In URL"
+msgstr ""
+
+#: ../../magazine-style/functions/theme-options.php:171
+msgid "Dribbble In URL"
+msgstr ""
+
+#: ../../magazine-style/includes/adfun.php:49
+#, php-format
+msgid "Magazine Style Theme %s"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Archives by Subject:"
+#~ msgstr "Kategoria \""

@@ -5,7 +5,6 @@
  */
 include_once get_stylesheet_directory() . '/functions/magazine-functions.php';
 
-
 function magazine_child_pagenavi() {
   global $wp_query, $wp_rewrite;
   $pages = '';
@@ -27,6 +26,8 @@ function magazine_child_pagenavi() {
  if ($max > 1) echo '</div>';
 }
 
+
+
 /**
  * Setup Child Theme's textdomain.
  *
@@ -34,7 +35,7 @@ function magazine_child_pagenavi() {
  * Translations can be filed in the /languages/ directory.
  */
 function my_child_theme_setup() {
-  load_child_theme_textdomain( 'magazine-child', get_stylesheet_directory() . '/languages' );
+  load_child_theme_textdomain( 'magazine', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'my_child_theme_setup' );
 

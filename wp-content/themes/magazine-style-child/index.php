@@ -4,7 +4,7 @@
 		<div id="page-inner" class="clearfix">
 			<?php if (magazine_get_option('magazine_banner' ) =='1' ) {load_template(get_template_directory() . '/includes/banner-top.php'); } ?>
 			
-				<div id="content"><div id="subtitle"><?php _e('Frontpage', 'magazine-child'); // magazine_breadcrumbs(); ?></div>
+				<div id="content"><div id="subtitle"><?php _e('Frontpage', 'magazine'); // magazine_breadcrumbs(); ?></div>
 					<?php if(have_posts()) : ?>
 					<?php while(have_posts())  : the_post(); ?>
 							<?php get_template_part('/includes/post'); ?>
@@ -17,7 +17,7 @@
 								</div>
 						</div>
 					<?php endif; ?>
-					<?php load_template (get_template_directory() . '/includes/pagenav.php'); ?>	
+					<?php get_template_part('/includes/pagenav'); ?>	
 				</div> <!-- end div #content -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
