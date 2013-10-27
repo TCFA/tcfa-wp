@@ -14,7 +14,7 @@
 								<?php the_content(); ?>
 								<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'magazine' ), 'after' => '</div>' ) ); ?>
 							</div> <!-- end div .entry -->
-						<?php load_template (get_stylesheet_directory() . '/includes/postmeta.php'); //parent theme function was: get_template_directory() ?> 
+						<?php //load_template (get_stylesheet_directory() . '/includes/postmeta.php'); //parent theme function was: get_template_directory() ?> 
 							<div class="comments">
 								<?php comments_template(); ?>
 							</div> <!-- end div .comments -->
