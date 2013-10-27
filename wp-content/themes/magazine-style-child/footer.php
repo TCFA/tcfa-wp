@@ -9,7 +9,6 @@
 		<div id="footer-left">
 <p><?php _e('Copyright &#169;', 'magazine'); ?>  <?php echo date('Y');?> 
 	<a href="<?php echo esc_url(home_url());?>/" title="<?php bloginfo('name');?>" ><?php bloginfo('name');?></a><br />
-	<?php _e('Powered by', 'magazine'); ?> <a target="_blank" href="http://wordpress.org/"><strong><?php _e('WordPress', 'magazine'); ?></strong></a>
 </p>
 </div> <!-- end div #footer-left -->
 
