@@ -13,11 +13,16 @@ h1 {
 	margin-bottom: 1em;
 }
 
+p {
+	margin: 1em 0;
+	padding: 0 0;
+}
+
 blockquote {
 	border-left: 5px solid #920016;
 }
 #navigation {
-background: #353535;
+	background: #353535;
 }
 
 #navigation-inner {
