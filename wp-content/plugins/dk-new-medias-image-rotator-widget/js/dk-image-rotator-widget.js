@@ -89,15 +89,6 @@ function irw_load_fade(img, widget, slider, speed) {
 	});
 	widget.height(image_set_height + "px");
 
-
-	// Vertically center all <li>s
-	var $lis = slider.find("li");
-	$lis.each(function(i){
-		var h = jQuery(this).find('img').height();
-		var topmargin = ((widget.height() - h) / 2);
-		jQuery(this).css({'margin-top': topmargin});
-	});
-	
 	slider.find("li:first-child").addClass("active");
 	slider.find("li:not(.active)").css({
 		position: "relative",

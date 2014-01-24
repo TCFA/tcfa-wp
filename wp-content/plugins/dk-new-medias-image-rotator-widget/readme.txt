@@ -3,7 +3,7 @@ Contributors: srcoley, douglaskarr
 Tags: jquery, widget, widgets, image, images, rotator, slider
 Requires at least: 2.7
 Tested up to: 3.5.1
-Stable tag: 0.2.6
+Stable tag: 0.2.8
 
 Bare bones image rotator.
 
@@ -11,7 +11,9 @@ Bare bones image rotator.
 
 **Overview**
 
-A widgetized plugin that puts an image rotator on your theme. You can choose from three different transitions: linear, loop, and fade. In the widget settings you have the ability to upload/select images to add to the Image Rotator, and to drag & drop to reorder the order you want the images to appear. For a short video demonstrating the settings workflow, visit: http://www.youtube.com/watch?v=D7YMN8b0Olg
+A widgetized plugin that puts an image rotator on your theme. You can choose from three different transitions: linear, loop, and fade. In the widget settings you have the ability to upload/select images to add to the Image Rotator, and to drag & drop to reorder the order you want the images to appear. Watch the video below for a short demonstation of workflow. 
+
+http://www.youtube.com/watch?v=D7YMN8b0Olg
 
 **Features**
 
@@ -141,6 +143,12 @@ You can ask questions [Here](http://www.dknewmedia.com/#contact "DK New Media Co
 = 0.2.6 =
 * Bugfix - PHP getimagesize() is now used with a local file path instead of a url.
 
+= 0.2.7 =
+* New Feature - Added a feature to randomize the order of images. 
+
+= 0.2.8 =
+* Bug Fix - Switched $_SERVER['DOCUMENT_ROOT'] to get_home_path() to reduce getimagesize() errors
+
 == Upgrade Notice ==
 
 = 0.1.1 =
@@ -204,3 +212,11 @@ Now you can set your links to nofollow. Also no more disappearing links! This wa
 = 0.2.6 =
 
 This update aims to fix the 'Warning: getimagesize()' bug. PHP's getimagesize() is now used with a local file path instead of a url.
+
+= 0.2.7 =
+
+Added a feature to randomize the order of images. 
+
+= 0.2.8 =
+
+This update helps resolve the 'getimagesize' error that was appearing for some users.
