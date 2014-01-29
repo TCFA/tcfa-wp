@@ -7,7 +7,14 @@
 				<div id="content"><div id="subtitle"><?php _e('Frontpage', 'magazine'); // magazine_breadcrumbs(); ?></div>
 					<?php if(have_posts()) : ?>
 					<?php while(have_posts())  : the_post(); ?>
-							<?php get_template_part('/includes/post'); ?>
+							<?php
+							// Check if betway post
+							if ( has_tag('betway') ) {
+								get_template_part('/includes/betway'); 
+							} else {
+								get_template_part('/includes/post'); 
+							}
+							?>
 					<?php endwhile; ?>
 					<?php else : ?>
 							<div class="post">
